@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "book-cmp": "/components/article/article",
+    "loading-cmp": "/components/loading/index"
+  },
+  "backgroundColor": "#f5f5f5",
+  "navigationBarTitleText": "作品"
+}

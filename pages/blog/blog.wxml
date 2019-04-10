@@ -1,0 +1,10 @@
+<!--pages/work/work.wxml-->
+<view class="sub-container">
+  <image class="head-img" src="/image/item/quality.png" />
+  <view class="books-container">
+    <block wx:for="{{dataArray}}" wx:key="{{item.cid}}">
+      <book-cmp item="{{item}}" class="book" />
+    </block>
+  </view>
+  <loading-cmp class="loading" wx:if="{{loading}}" />
+</view>

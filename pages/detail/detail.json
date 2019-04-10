@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "music-cmp": "/components/music/music"
+  },
+   
+  "navigationBarTitleText": "详情"
+}

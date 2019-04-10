@@ -1,0 +1,36 @@
+<view bind:tap="onTap" class="container">
+  <image src="{{util.titlePic(item.content)}}"></image>
+  <view class="description">
+    <text class='title'>{{item.title}}</text>
+    <view class="footer">
+      <text class="comtents">{{item.commentsNum==null?0:item.commentsNum}}  评论</text>
+      <view class='foot'>
+        <epsoide-cmp class="epsoide" created="{{item.created}}" />
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<wxs module="util">
+  var titlePic = function(str) {
+    if (str == null) {
+      return ''
+    }
+    //console.log(str)
+
+    if (str.indexOf("![](http") !== -1) {
+      var num1 = str.split("(") //["deleteChild", "236737)"]
+      var num2 = num1[1].split(")") //["236737", ""]
+      var result = num2[0]
+
+      return result
+    } else {
+      return '/image/item/blog-' + Math.floor(Math.random() * 8) + '.jpg'
+    }
+
+  }
+  module.exports = {
+    titlePic: titlePic
+  }
+</wxs>

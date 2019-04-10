@@ -1,0 +1,21 @@
+<view class="container">
+  <image src="/image/my/my@bg.png" class="bg"></image>
+  <img-btn-cmp wx:if="{{!hasUserInfo}}" open-type="getUserInfo" class="avatar-position" bind:getuserinfo="onGetUserInfo">
+    <image slot="img" class="avatar" src="/image/my/my.png" />
+  </img-btn-cmp>
+  <view class="avatar-container avatar-position">
+    <image src="{{userInfo.avatarUrl}}" wx:if="{{hasUserInfo}}" class="avatar" />
+    <open-data wx:if="{{hasUserInfo}}" type="userNickName"></open-data>
+  </view>
+
+
+
+</view>
+<view class="describer">
+  <text class='t1'>Hi!</text>
+  <text class='t2'>My name is Jarvan.</text>
+  <text class='t3'>I’m a Java Developer with an enduring interest in Coding and PUBG.</text>
+  <text class='t3'>Want to work together on something? Just Email me . And add me on WeChat(Geeknum1).</text>
+  <text class='t3'>Welcome to my website (https://www.i3ni.cn).</text>
+
+</view>

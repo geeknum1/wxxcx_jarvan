@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/work/work",
+    "pages/blog/blog",
+    "pages/about/about",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Jarvan小站",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "color": "#c7c7c7",
+    "list": [
+      {
+        "pagePath": "pages/work/work",
+        "selectedIconPath": "/image/tab/classic@highlight.png",
+        "iconPath": "/image/tab/classic.png",
+        "text": "作品"
+      },
+      {
+        "pagePath": "pages/blog/blog",
+        "selectedIconPath": "/image/tab/book@highlight.png",
+        "iconPath": "/image/tab/book.png",
+        "text": "博客"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "selectedIconPath": "/image/tab/my@highlight.png",
+        "iconPath": "/image/tab/my.png",
+        "text": "关于"
+      }
+    ]
+  }
+}
